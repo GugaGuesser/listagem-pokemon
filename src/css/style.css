@@ -1,0 +1,131 @@
+body{
+    font-family: sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #5e5e5bad;
+    color: #333333;
+}
+
+body.modoescuro{
+    background-color: black;
+    color: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .logo,
+header .imagem-botao{
+    width: 30px;
+}
+
+header #botao-alterar-tema{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon:hover{
+    transform: scale(1.1);
+}
+
+main{
+    
+    padding: 25px;
+}
+
+main .listagem-pokemon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+main .cartao-pokemon{
+    background-color: rgb(97, 89, 89);
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+main .cartao-pokemon:hover{
+    background-color: rgb(161, 204, 246);
+    cursor: pointer;
+}
+
+.modoescuro .cartao-pokemon{
+    background-color: gray;
+}
+
+main .cartao-pokemon .informacoes span{
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao-pokemon .informacoes{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 1px solid#333333;
+}
+ main .cartao-pokemon .gif{
+    width: 90px;
+    height: 90px;
+ }
+
+ main .cartao-pokemon .tipos{
+    display: flex;
+    gap: 15px;
+ }
+
+ .tipo-grama{
+    background-color: green;
+    border-radius: 15px;
+    padding: 8px;
+ }
+
+ .tipo-veneno{
+    background-color: blueviolet;
+    border-radius: 15px;
+    padding: 8px;
+ }
+
+ .tipo-agua{
+    background-color: darkcyan;
+    border-radius: 15px;
+    padding: 8px;
+ }
+  .tipo-fogo{
+    background-color: red;
+    border-radius: 15px;
+    padding: 8px;
+  }
+
+  .tipo-voador{
+    background-color: rgb(162, 183, 183);
+    border-radius: 15px;
+    padding: 8px;
+  }
+
+  .tipo-inseto{
+    background-color: chartreuse;
+    border-radius: 15px;
+    padding: 8px;
+  }
+
+  main .descricao{
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+  }
